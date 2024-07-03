@@ -64,7 +64,7 @@ const Login = ({setUserDetails}) => {
 
   return (
     <div className="container">
-      <h3>Login</h3>
+      <h3 style={{textAlign: "center"}}>Login</h3>
       <form onSubmit={submitData}>
         <div className="row">
             <div className="col-25">
