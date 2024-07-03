@@ -10,6 +10,11 @@ const Login = ({setUserDetails}) => {
 
   const submitData= async(e) => {
     e.preventDefault();
+
+    if(user == '' || pas == ''){
+        alert('Either username or password seems empty');
+        return
+    }
     try {
         console.log(JSON.stringify({ user, pas }))
         const response = await fetch('https://dummyjson.com/auth/login', {
