@@ -24,7 +24,6 @@ const Login = ({setUserDetails}) => {
           },
           body: JSON.stringify({ username: user, password:pas,expiresInMins: 30, }),
         });
-  
         if (response.ok) {
           const data = await response.json();
           localStorage.setItem('token', data.token); // Example: Storing token in localStorage
